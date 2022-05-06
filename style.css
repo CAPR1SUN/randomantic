@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+html, body {
+    font-family: 'Koulen', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #A767FF;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    
+}
+
+main {
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 15px 40px;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.wrapper p {
+    font-size: 1.3rem;
+    line-height: 90%;
+}
+
+.ball-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 5px;
+}
+
+.ball-wrapper img {
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input, form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+
+input {
+    height: 50px;
+    width: 250px;
+}
+input, button {
+    border: 2px solid #A767FF;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: #A767FF;
+}
+
+button {
+    background-color: #A767FF;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 180px;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: #7539c9;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    header {
+        padding: 30px 0;
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        padding: 20px;
+        
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .wrapper p {
+        font-size: 2rem;
+    }
+    
+    .ball-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .ball-wrapper img {
+        width: 500px;
+    }
+
+    input {
+        width: 600px;
+        height: 150px;
+        font-size: 1.7rem;
+    }
+
+    
+    button {
+        width: 300px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1500px) 
+  and (max-device-width: 2080px) 
+ {
+    header {
+        padding: 10px 0;
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        padding: 20px;
+        
+    }
+
+    .ball-wrapper img {
+        width: 300px;
+    }
+
+    input {
+        width: 800px;
+        height: 100px;
+        font-size: 1.7rem;
+    }
+
+    
+    button {
+        width: 300px;
+        height: 80px;
+        font-size: 2rem;
+    }
+  }
