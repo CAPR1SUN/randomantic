@@ -20,11 +20,28 @@
         <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/crystal-ball_1f52e.png" alt="crystalball">
         <div class="form-wrapper">
             <form action="#">
-                <input type="text" name="question" id="question">
-                <button>Ask a question!</button>
+                <input type="text" name="question" id="question" autocomplete="off">
+                <button id="myBtn" type="button">Ask a question!</button>
         </form>
         </div>
         </div>
     </main>
+
+    <script>
+        const question = document.getElementById('question');
+        question.addEventListener("keypress", function(e) {
+            if (e.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('myBtn').click();
+            }
+        });
+        
+        const myBtn = document.getElementById('myBtn');
+        myBtn.addEventListener("click", function(e) {
+            console.log('The question was submitted.');
+            let horoscopeMsg = ['Expect something positive happening on the romantic front.', 'You will succeed in stabilizing your financial front', 'Precautionary measures need to be taken on the health front.', 'A good deal on the property front is possible.', 'Not offering a helping hand to a spouse may be resented.', 'Growing attraction with an office colleague may turn into a full-blown romance.', 'Innovative ideas are likely to give you fame.', 'Health wise, you will remain at the peak.'];
+            alert (horoscopeMsg[Math.floor(Math.random()*horoscopeMsg.length)]);
+        });
+    </script>
 </body>
 </html>
